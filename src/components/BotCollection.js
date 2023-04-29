@@ -28,7 +28,7 @@ function BotCollection() {
 
   return (
     <>
-      <YourBotArmy armyData={armyData}/>
+      <YourBotArmy armyData={armyData} setArmyData={setArmyData}/>
       <div className ="bot-list">
         {botData.map((bot) => (
           <div key={bot.id} className="bot-container" onClick={() => handleClick(bot)}>
