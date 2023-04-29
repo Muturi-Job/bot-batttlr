@@ -1,23 +1,55 @@
+.bot-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 auto;
+}
 
-.bot-list{
-  columns: 4;
+.bot-container {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  text-align: center;
+ 
 }
-.bot-container{
-  padding: 2px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  background-color: ivory;
-}
-.bot-container img{
+
+.bot-container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
   background-color: grey;
 }
 
+.bot-container h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+.bot-container .bot-stats p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+
+
+.bot-container button {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 .bot-army{
   background-color: greenyellow;
   display: flex;
-  padding: 10px;
-}
-.bot-army .bot-container{
-  margin: 5px;
-
 }
