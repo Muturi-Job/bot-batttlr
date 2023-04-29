@@ -19,9 +19,9 @@ function BotCollection() {
   };
 
   return (
-    <div id="bot-list">
+    <div className ="bot-list">
       {botData.map((bot) => (
-        <div key={bot.id} id="bot-container">
+        <div key={bot.id} className="bot-container">
           <img src={bot.avatar_url} alt="Bot Avatar" />
           <h3>{bot.name}</h3>
           <p>{bot.catchphrase}</p>
