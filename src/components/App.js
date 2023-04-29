@@ -1,5 +1,6 @@
+import React from 'react';
 import BotCollection from './BotCollection';
-import logo from './logo.svg';
+
 
 
 function App() {
