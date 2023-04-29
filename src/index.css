@@ -1,18 +1,23 @@
-/* .bot-container {
-    background-color: grey;
-    width: 25%;
-    box-sizing: border-box;
-    padding: 10px;
-    float: left;
-  } */
+
 .bot-list{
   columns: 4;
 }
 .bot-container{
-  /* padding: 5px; */
- border-radius: 10px;
+  padding: 2px;
+  border-radius: 10px;
   box-sizing: border-box;
+  background-color: ivory;
 }
 .bot-container img{
   background-color: grey;
+}
+
+.bot-army{
+  background-color: greenyellow;
+  display: flex;
+  padding: 10px;
+}
+.bot-army .bot-container{
+  margin: 5px;
+
 }

@@ -8,9 +8,7 @@ function YourBotArmy({ armyData }) {
     };
   
     return (
-      <div className="bot-army">
-        <h2>Your Bot Army</h2>
-        
+      <div className="bot-army">        
         {armyData.map((bot) => (
           <div key={bot.id} className="bot-container">
             <img src={bot.avatar_url} alt="Bot Avatar" />
