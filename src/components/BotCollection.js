@@ -26,13 +26,24 @@ function BotCollection() {
     }
   };
 
+  function handleDelete(bot) {
+    fetch(`http://localhost:8001/bots/${bot.id}`, {
+      method: 'DELETE'
+    })
+    .then(res => res.json())
+    .then(data => {
+      setBotData(botData.filter(b => b.id !== bot.id));
+      setArmyData(armyData.filter(b => b.id !== bot.id))
+    })
+  }
+
   return (
     <>
       <YourBotArmy armyData={armyData} setArmyData={setArmyData}/>
       <div className ="bot-list">
         {botData.map((bot) => (
-          <div key={bot.id} className="bot-container" onClick={() => handleClick(bot)}>
-            <img src={bot.avatar_url} alt="Bot Avatar" />
+          <div key={bot.id} className="bot-container" >
+            <img src={bot.avatar_url} alt="Bot Avatar" onClick={() => handleClick(bot)}/>
             <h3>{bot.name}</h3>
             <p>{bot.catchphrase}</p>
             <div className="bot-stats">
@@ -46,7 +57,7 @@ function BotCollection() {
                   {icons.armor} {bot.armor}
                 </p>
               </div>
-            <button className="big-red-button">x</button>
+            <button className="big-red-button" onClick={() => handleDelete(bot)}>x</button>
           </div>
         ))}
       </div>
