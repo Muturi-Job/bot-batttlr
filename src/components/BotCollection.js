@@ -31,7 +31,7 @@ function BotCollection() {
       method: 'DELETE'
     })
     .then(res => res.json())
-    .then(data => {
+    .then(() => {
       setBotData(botData.filter(b => b.id !== bot.id));
       setArmyData(armyData.filter(b => b.id !== bot.id))
     })

@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+Bot Battlr
+Welcome to Bot Battlr, the one and only spot in the known universe where you
+can custom build your own Bot Army! This is a React application that displays a
+list of available bots, among other features.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Getting Started
+To get started with the project, follow the instructions below:
 
-## Available Scripts
+Clone the repository to your local machine:
+git clone https://github.com/your-username/bot-battlr.git
+cd bot-battlr
 
-In the project directory, you can run:
+Install the dependencies:
+npm install
 
-### `npm start`
+Start the development server:
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In another terminal window, run the following command to start the backend server:
+json-server --watch db.json
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This will start the backend server on http://localhost:8001.
 
-### `npm test`
+Test the server by visiting this route in the browser: http://localhost:8001/bots.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Functionality
+This application allows you to:
 
-### `npm run build`
+See profiles of all bots rendered in BotCollection.
+Add an individual bot to your army by clicking on it. The selected bot should
+render in the YourBotArmy component. The bot can be enlisted only once.
+The bot does not disappear from the BotCollection.
+Release a bot from your army by clicking on it. The bot disappears from the
+YourBotArmy component.
+Discharge a bot from their service forever, by clicking the red button marked
+"x", which would delete the bot both from the backend and from the
+YourBotArmy on the frontend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Authoir : Job Muturi
